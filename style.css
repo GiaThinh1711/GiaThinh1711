@@ -188,8 +188,70 @@ a {
     transform: scaleX(1);
 }
 
+.port_card {
+    padding: 0;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(143, 143, 143, 0.5);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
+.card_img {
+    width: 100%;
+    height: auto;
+}
 
+.card_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+.card_content h2 {
+    margin: 0;
+}
+
+.card_content {
+    padding: 20px 0 20px 0;
+}
+
+.card_button {
+    width: 80%;
+    height: 50px;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+/* .card_button a {
+    font-size: 16px;
+    color: #4F46E5;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.card_button:hover {    
+        color: white !important;
+
+    background: linear-gradient(to right, #4F46E5, #8B5CF6);
+}
+
+.card_button a:hover{
+      color: white !important;
+
+} */
+.card_grid{
+  gap: 40px;
+  margin-top: 40px;
+}
 
 
 @media (min-width: 768px) {
