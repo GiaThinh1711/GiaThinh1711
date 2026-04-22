@@ -146,113 +146,150 @@ a {
 }
 
 .nav_link {
-    width: 100%;
-    justify-items: center;
-    padding-top: 10px;
+  width: 100%;
+  justify-items: center;
+  padding-top: 10px;
 }
 
 .nav_link ul li {
-    float: left;
+  float: left;
 }
 
 .nav_link a {
-    display: block;
-    color: #2d2d2d;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    position: relative;
-    padding-bottom: 7px;
-    font-size: 16px;
-    font-weight: 400;
+  display: block;
+  color: #2d2d2d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 7px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .nav_link a:hover {
-    color: var(--color-primary-hover);
+  color: var(--color-primary-hover);
 }
 
 .nav_link a:after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    background-color: var(--color-primary-hover);
-    width: 100%;
-    transform: scaleX(0);
-    transform-origin: left;
-    bottom: 0;
-    left: 0;
-    transition: all 0.2s ease-out;
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: var(--color-primary-hover);
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  bottom: 0;
+  left: 0;
+  transition: all 0.2s ease-out;
 }
 
 .nav_link a:hover:after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .port_card {
-    padding: 0;
-    height: auto;
-    background-color: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(143, 143, 143, 0.5);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  padding: 0;
+  height: auto;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(143, 143, 143, 0.5);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .card_img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .card_img img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px 15px 0 0;
 }
 
 .card_content h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .card_content {
-    padding: 20px 0 20px 0;
+  padding: 20px 0 20px 0;
+}
+.card_content span{
+  padding: 0 5px;
 }
 
 .card_button {
-    width: 80%;
-    height: 50px;
-    cursor: pointer;
-    margin: auto;
-    margin-bottom: 20px;
-    transition: all 0.5s ease;
+  width: 80%;
+  height: 50px;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
 }
 
-/* .card_button a {
-    font-size: 16px;
-    color: #4F46E5;
-    text-decoration: none;
-    padding: 10px 0;
-    font-weight: bold;
-    line-height: 50px;
-}
-
-.card_button:hover {    
-        color: white !important;
-
-    background: linear-gradient(to right, #4F46E5, #8B5CF6);
-}
-
-.card_button a:hover{
-      color: white !important;
-
-} */
-.card_grid{
+.card_grid {
   gap: 40px;
   margin-top: 40px;
 }
+.learn-more {
+  border-bottom: 2px solid rgb(9, 3, 1);
+}
+.learn-more button {
+  height: 50px;
+  background-color: #dc3545;
+  border: none;
+}
+.learn-more button:hover {
+  background-color: #a61b29;
+  border: none;
+}
+.nav-text h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
 
+.fa:hover {
+  scale: 1.2;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: white;
+}
+.fa-behance {
+  background: #070003;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
 
 @media (min-width: 768px) {
   .navbar__toggle {
