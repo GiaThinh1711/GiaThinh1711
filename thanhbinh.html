@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Thanh Binh Garden</title>
     <link rel="icon" type="image/x-icon" href="img/2.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -40,20 +41,27 @@
                 actual construction phase. The goal of the project is to help the investor and architect gain a visual
                 and accurate understanding of the layout, landscape, and interaction between functional areas within the
                 garden space.</span>
-            <div class="prj-img col-md-12 mt-3 mb-3">
+            <div data-aos="fade-up" class="prj-img col-md-12 mt-3 mb-3">
                 <img src="img/Asset 133.png" alt="">
             </div>
-            <div class="prj-img col-md-6 mb-3">
+            <div data-aos="fade-left" class="prj-img col-md-6 mb-3">
                 <img src="img/10.png" alt="">
             </div>
-            <div class="prj-img col-md-6 mb-3">
+            <div data-aos="fade-right" class="prj-img col-md-6 mb-3">
                 <img src="img/11.png" alt="">
             </div>
-            <div class="prj-img col-md-6 mb-3">
+            <div data-aos="fade-left" class="prj-img col-md-6 mb-3">
                 <img src="img/12.png" alt="">
             </div>
-            <div class="prj-img col-md-6 mb-3">
+            <div data-aos="fade-right" class="prj-img col-md-6 mb-3">
                 <img src="img/14.png" alt="">
+            </div>
+            <div data-aos="fade-down" class="prj-img col-md-12 mb-3">
+                <div class="card_img">
+                    <model-viewer src="img/tb.glb" auto-rotate camera-controls shadow-intensity="1"
+                        style="width: 100%; height: 300px; background-color: #eee;">
+                    </model-viewer>
+                </div>
             </div>
         </div>
     </div>
@@ -68,6 +76,12 @@
         <p class="text-center text-white">© 2026 Company, Inc</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"></script>
+</body>
 </body>
 
 </html>

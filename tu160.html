@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>TU-160 Black Jack</title>
     <link rel="icon" type="image/x-icon" href="img/2.png">
 </head>
@@ -40,18 +41,26 @@
                 the project is to accurately recreate the complex aerodynamic lines and distinctive mechanical structure
                 of this aircraft, combining Hard Surface modeling techniques and mesh optimization for a professional
                 rendering environment.</span>
-            <div class="prj-img col-md-12 mt-3 mb-3">
+            <div data-aos="zoom-in-down" class="prj-img col-md-12 mt-3 mb-3">
                 <img src="img/TU160.jpg" alt="">
             </div>
-            <div class="prj-img col-md-6 mb-3">
+            <div data-aos="fade-right" class="prj-img col-md-6 mb-3">
                 <img src="img/22.png" alt="">
             </div>
-            <div class="prj-img col-md-6 mb-3">
+            <div data-aos="fade-left" class="prj-img col-md-6 mb-3">
                 <img src="img/23.png" alt="">
             </div>
-            <div class="prj-iframe col-md-12">
+            <div data-aos="zoom-in-up" class="prj-iframe col-md-12 mb-3">
                 <iframe frameborder="0" class="juxtapose" scrolling="no"
                     src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=57554d84-3ea0-11f1-ba1b-0e6f42328d7d"></iframe>
+            </div>
+            <div class="prj-img col-md-12 mb-3">
+                <div class="card_img">
+                    <model-viewer src="img/Jet.glb" poster="img/Asset_144.png" alt="3D Model TU-160" auto-rotate
+                        camera-controls shadow-intensity="1"
+                        style="width: 100%; height: 300px; background-color: #eee;">
+                    </model-viewer>
+                </div>
             </div>
         </div>
     </div>
@@ -66,6 +75,11 @@
         <p class="text-center text-white">© 2026 Company, Inc</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"></script>
 </body>
 
 </html>

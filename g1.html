@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <title>G-ONE Studio</title>
     <link rel="icon" type="image/x-icon" href="img/2.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -39,19 +40,19 @@
             <span>G-ONE Studio is a brand identity design project for a modern fashion studio. The goal of the project
                 was to create a minimalist yet highly professional image, helping the brand stand out in the highly
                 competitive creative industry.</span>
-            <div class="prj-img col-md-12 mt-3 mb-3">
+            <div data-aos="fade-up" class="prj-img col-md-12 mt-3 mb-3">
                 <img src="img/mockup4.png" alt="">
             </div>
-            <div class="prj-img col-md-6 mb-3">
+            <div data-aos="fade-left" class="prj-img col-md-6 mb-3">
                 <img src="img/mockup9.png" alt="">
             </div>
-            <div class="prj-img col-md-6 mb-3">
+            <div data-aos="fade-right" class="prj-img col-md-6 mb-3">
                 <img src="img/mockup8.png" alt="">
             </div>
-            <div class="prj-img col-md-12 mb-3">
+            <div data-aos="fade-up" class="prj-img col-md-12 mb-3">
                 <img src="img/mockup10.png" alt="">
             </div>
-            <div class="prj-img col-md-12 mb-3">
+            <div data-aos="fade-down" class="prj-img col-md-12 mb-3">
                 <img src="img/mockup6.png" alt="">
             </div>
         </div>
@@ -67,6 +68,10 @@
         <p class="text-center text-white">© 2026 Company, Inc</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
