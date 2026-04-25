@@ -375,19 +375,99 @@ a {
   height: auto;
 }
 .prj-iframe {
-    width: 100%;
-    /* Tỉ lệ này nên khớp với tỉ lệ ảnh máy bay của bạn để không bị trắng */
-    aspect-ratio: 16 / 9; 
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+}
+.about-img img {
+  width: auto;
+  height: 500px;
+  object-fit: cover;
 }
 
 .prj-iframe iframe {
-    width: 100% !important;
-    height: 50vw !important;
-    border: none;
-    overflow: hidden;
+  width: 100% !important;
+  height: 50vw !important;
+  border: none;
+  overflow: hidden;
 }
+
+@media screen and (max-width: 426px) {
+  .card_grid.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .port_card {
+    flex: 0 0 90%;
+    width: 90%;
+    max-width: 90%;
+    margin: 0 0 25px 0;
+    padding: 0;
+  }
+
+  .hero_prj h1.text-uppercase {
+    font-size: 28px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: auto;
+    white-space: nowrap;
+    border-bottom: 3px solid #c02121;
+    padding-bottom: 5px;
+  }
+
+  .hero_about h1 {
+    font-size: 28px;
+    top: 45%;
+    display: inline-block;
+    width: auto;
+    white-space: nowrap;
+    border-bottom: 3px solid #c02121;
+    padding-bottom: 5px;
+  }
+
+  .hero_contact h1 {
+    font-size: 28px;
+    top: 32%;
+    display: inline-block;
+    width: auto;
+    white-space: nowrap;
+    border-bottom: 3px solid #c02121;
+    padding-bottom: 5px;
+  }
+  .contact_right {
+    margin: 0 !important;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .social-media {
+    padding-bottom: 20px;
+  }
+
+  .nav_link ul {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px 15px;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .contact-info-card span {
+    font-size: 1rem !important;
+  }
+
+  .contact-item i {
+    color: white !important;
+    font-size: 1.2rem;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar__toggle {
     display: none;
@@ -442,5 +522,15 @@ a {
   .navbar__link--cta:focus {
     background-color: var(--color-primary-hover);
     border-bottom: none;
+  }
+
+  .contact-info-card span {
+    font-size: 0.8rem !important;
+    color: white;
+  }
+
+  .contact-item i {
+    color: white !important;
+    font-size: 1rem;
   }
 }
